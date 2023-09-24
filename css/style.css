@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --blue: #0c66ff;
+  --dark-blue: #3b506c;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+/* ====== Header Section ====== */
+header {
+  border-bottom: 2px solid #3b506c1c;
+  /* box-shadow: 0px -6px 11px #3b506c; */
+}
+.default-width {
+  padding: 0 100px;
+  align-items: center;
+}
+.logo {
+  flex-basis: 20%;
+}
+.logo a {
+}
+.logo a img {
+  width: 100px;
+}
+nav {
+  flex-basis: 80%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+nav ul li {
+}
+nav ul li a {
+  display: block;
+  /* ui li er vitore "a" tag thakle, display: block korte hobe */
+  color: var(--dark-blue);
+  font-size: 17px;
+  padding: 15px 13px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+}
+
+/* ====== Hero Banner Section ====== */
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+p {
+  color: var(--dark-blue);
+  font-size: 17px;
+  margin: 10px 0 30px;
+}
+h1 {
+  font-size: 50px;
+  color: var(--dark-blue);
+}
+h1 span {
+  color: var(--blue);
+  display: block;
+}
+.hero-banner-section {
+  padding: 80px 0;
+  text-align: center;
+}
+.hero-banner-section img {
+  max-width: 650px;
+  align-self: center;
+}
+
+/* ====== Feature  Section ====== */
+.feature-section {
+}
+.col_1_2 {
+}
+.text-right {
+}
+h3 {
+}
+h2 {
+}
+
+/* ====== Service  Section ====== */
+.service-section {
+}
+.service-section img {
+}
+.col_1_3 {
+}
+.service-01 {
+}
+.service-02 {
+}
+.service-03 {
+}
+
+h4 {
+}
+
+/* ====== Footer  Section ====== */
+footer {
+}
+footer p {
+}
+footer p a {
+}
