@@ -1,0 +1,130 @@
+@media screen and (max-width: 1025px) {
+  h1,
+  h2,
+  h3 {
+    font-size: calc(var(--font-size-primary-50) - 10px);
+  }
+  .container {
+    max-width: 725px;
+  }
+  .default-width {
+    padding: 0px 50px;
+  }
+  h4 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  p {
+    font-size: 14px;
+    margin: 10px 0 10px;
+  }
+  nav ul li a {
+    font-size: 15px;
+    padding: 11px 8px;
+  }
+  .hero-banner-section p {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .hero-banner-section img {
+    max-width: 485px;
+  }
+  .col_1_3 {
+    flex-basis: 50%;
+  }
+  .flex {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .default-width {
+    padding: 0px 10px;
+  }
+  .logo,
+  nav {
+    flex-basis: 100%;
+  }
+  nav ul {
+    justify-content: center;
+    width: 100%;
+  }
+  nav ul li a {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+  .hero-banner-section img {
+    max-width: 100%;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: calc(var(--font-size-primary-50) - 20px);
+  }
+  .col_1_2 {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 3px 15px;
+  }
+  .text-right {
+    text-align: center;
+  }
+  .col_1_3 {
+    flex-basis: 85%;
+  }
+  .logo {
+    text-align: center;
+  }
+  header {
+    padding: 10px 0 5px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  footer {
+    background-color: var(--dark-blue);
+    padding: 19px 10px;
+  }
+  footer p {
+    font-size: 12px;
+    letter-spacing: 1;
+  }
+  .col_1_3 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .service-01,
+  .service-02,
+  .service-03 {
+    padding: 22px 18px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: calc(var(--font-size-primary-50) - 25px);
+  }
+  .feature-section {
+    padding: 30px 0 17px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li a {
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .hero-banner-section {
+    padding: 30px 0 0;
+  }
+}

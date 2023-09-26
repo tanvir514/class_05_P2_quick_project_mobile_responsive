@@ -3,6 +3,8 @@
 :root {
   --blue: #0c66ff;
   --dark-blue: #3b506c;
+  --font-size-primary-50: 50px;
+  --font-weight-700: 700px;
 }
 
 body {
@@ -22,6 +24,10 @@ img {
 /* ====== Header Section ====== */
 header {
   border-bottom: 2px solid #3b506c1c;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding-bottom: 5px;
+  /* position: unset; */
   /* box-shadow: 0px -6px 11px #3b506c; */
 }
 .default-width {
@@ -30,8 +36,6 @@ header {
 }
 .logo {
   flex-basis: 20%;
-}
-.logo a {
 }
 .logo a img {
   width: 100px;
@@ -44,26 +48,29 @@ nav ul {
   list-style: none;
   justify-content: flex-end;
 }
-nav ul li {
-}
 nav ul li a {
   display: block;
   /* ui li er vitore "a" tag thakle, display: block korte hobe */
   color: var(--dark-blue);
-  font-size: 17px;
-  padding: 15px 13px;
+  font-size: 16px;
+  padding: 13px 13px;
   text-decoration: none;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 nav ul li a:hover {
+  background-color: var(--blue);
+  color: #fff;
 }
 
 /* ====== Hero Banner Section ====== */
 .container {
-  max-width: 800px;
+  max-width: 888px;
   margin: auto;
 }
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .flex-column {
   flex-direction: column;
@@ -74,15 +81,16 @@ p {
   margin: 10px 0 30px;
 }
 h1 {
-  font-size: 50px;
+  font-size: var(--font-size-primary-50);
   color: var(--dark-blue);
+  font-weight: 700;
 }
 h1 span {
   color: var(--blue);
   display: block;
 }
 .hero-banner-section {
-  padding: 80px 0;
+  padding: 80px 0 0;
   text-align: center;
 }
 .hero-banner-section img {
@@ -92,37 +100,78 @@ h1 span {
 
 /* ====== Feature  Section ====== */
 .feature-section {
+  padding: 50px 0;
 }
 .col_1_2 {
+  flex-basis: 50%;
+  padding: 15px;
 }
 .text-right {
+  text-align: right;
 }
 h3 {
+  font-size: var(--font-size-primary-50);
+  color: #ff6347;
+  font-weight: 700;
 }
 h2 {
+  font-size: var(--font-size-primary-50);
+  color: var(--dark-blue);
+  font-weight: 700;
 }
 
 /* ====== Service  Section ====== */
 .service-section {
+  /* padding: 20px; */
+  padding-bottom: 50px;
 }
 .service-section img {
+  height: 200px;
+
+  margin: auto;
+  display: block;
+
+  /* margin auto korle kaj hobe na, sathe display block korte hobe,
+  img er nijer jayga nai, right side e jabar, block korle pura jayga pabe */
 }
 .col_1_3 {
+  flex-basis: 33.33%;
+  padding: 20px;
 }
 .service-01 {
+  background-color: #fdebed;
+  padding: 50px 30px;
 }
 .service-02 {
+  background-color: #ebf9f4;
+  padding: 50px 30px;
 }
 .service-03 {
+  background-color: #fff7e8;
+  padding: 50px 30px;
 }
-
 h4 {
+  color: var(--dark-blue);
+  font-size: 18px;
+  margin-top: 15px;
 }
 
 /* ====== Footer  Section ====== */
 footer {
+  background-color: var(--blue);
+  text-align: center;
+  padding: 31px 20px;
 }
 footer p {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 footer p a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
